@@ -1454,7 +1454,7 @@ import { setBackdropTransparency, TRANSPARENCY_LEVEL } from '../../../components
                     capture: true,
                     passive: true
                 });
-                document.addEventListener('wheel', onWheel);
+                osdBottomElement.addEventListener('wheel', onWheel);
                 /* eslint-disable-next-line compat/compat */
                 dom.addEventListener(window, window.PointerEvent ? 'pointerdown' : 'mousedown', onWindowMouseDown, {
                     capture: true,
@@ -1496,7 +1496,7 @@ import { setBackdropTransparency, TRANSPARENCY_LEVEL } from '../../../components
                 capture: true,
                 passive: true
             });
-            document.removeEventListener('wheel', onWheel);
+            osdBottomElement.removeEventListener('wheel', onWheel);
             /* eslint-disable-next-line compat/compat */
             dom.removeEventListener(window, window.PointerEvent ? 'pointerdown' : 'mousedown', onWindowMouseDown, {
                 capture: true,
